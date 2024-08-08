@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://8tk8ii34vnmg"]
+
+[ext_resource type="Material" uid="uid://cunv5n123ca67" path="res://cubey1shader.tres" id="1_udbrq"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="Node2D"]
+
+[node name="Node2D" type="Node2D" parent="Node2D/Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D/Node2D/Node2D"]
+material = ExtResource("1_udbrq")
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+
+[node name="Line2D" type="Line2D" parent="Node2D/Node2D/Node2D"]
+z_index = 1
+position = Vector2(-50, -50)
+scale = Vector2(1, 1)
+points = PackedVector2Array(0, 0, 100, 0, 100, 100, 0, 100)
+closed = true
+width = 2.0
+default_color = Color(0, 0, 0, 1)

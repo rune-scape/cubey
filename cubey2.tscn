@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://2jkyrdi4auf8"]
+
+[ext_resource type="Script" path="res://cubey.gd" id="1_cj51s"]
+
+[node name="PanelContainer" type="Node2D"]
+script = ExtResource("1_cj51s")
+dist = 200.0
+scal = 1.25
+linew = 2.0
+rotations = 0.427606

@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://bt33bhx4lvp3h"]
+
+[ext_resource type="PackedScene" uid="uid://2jkyrdi4auf8" path="res://cubey2.tscn" id="1_pqnj3"]
+[ext_resource type="Script" path="res://cubey3.gd" id="1_yqxf6"]
+[ext_resource type="Material" uid="uid://cunv5n123ca67" path="res://cubey1shader.tres" id="2_4bbxy"]
+[ext_resource type="Material" uid="uid://bx2lr5msro564" path="res://cubey2shader.tres" id="3_kcqg0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jmljg"]
+bg_color = Color(1, 1, 1, 1)
+
+[node name="PanelContainer" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jmljg")
+script = ExtResource("1_yqxf6")
+rot_speed = -1.0
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="PanelContainer2" parent="Control" instance=ExtResource("1_pqnj3")]
+rotation = 379.339
+count = 24
+scal = 1.52
+mat = ExtResource("2_4bbxy")
+
+[node name="PanelContainer" parent="Control" instance=ExtResource("1_pqnj3")]
+rotation = -213.925
+count = 24
+scal = 2.0
+linew = 0.01
+mat = ExtResource("3_kcqg0")

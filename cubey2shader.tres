@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bx2lr5msro564"]
+
+[ext_resource type="Shader" path="res://cubey2.gdshader" id="1_o8boa"]
+
+[resource]
+shader = ExtResource("1_o8boa")
